@@ -35,7 +35,7 @@ export default function page() {
     if (search.length === 0) {
       setFilteredList(users);
     } else {
-      setFilteredList(users.filter((item) => item.name.toLowerCase().includes(search.toLowerCase())));
+      setFilteredList(users.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()) || item.email.toLowerCase().includes(search.toLowerCase())));
     }
   }, [search, users]);
   return (
