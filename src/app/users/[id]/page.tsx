@@ -73,7 +73,7 @@ export default function page() {
                   <button
                     key={index}
                     onClick={() => setActivePagination(index)}
-                    className="text-[24px] mr-5 last:mr-0 border border-gray-700 px-3 hover:bg-gray-700 hover:text-white cursor-pointer"
+                    className={`text-[24px] mr-5 last:mr-0 border border-gray-700 px-3 hover:bg-gray-700 hover:text-white cursor-pointer ${activePagination === index ? "bg-gray-700 text-white" : ""}`}
                   >
                     {index + 1}
                   </button>
