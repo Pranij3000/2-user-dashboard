@@ -49,7 +49,7 @@ export default function page() {
                 {posts.map((item, index) => (
                   <div
                     key={index}
-                    className="single-post-wrapper pb-5 mb-5 border-b-2 border-gray-200"
+                    className="single-post-wrapper pb-5 mb-5 last:pb-0 last:mb-0 last:border-0 border-b-2 border-gray-200"
                   >
                     <SinglePost post={item} />
                   </div>
