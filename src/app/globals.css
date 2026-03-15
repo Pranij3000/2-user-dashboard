@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --text: #101828;
+  --main-grey: #e4e6e9;
+  --primary: #081327;
+}
+
+@theme {
+  --color-text: var(--text);
+  --color-main-grey: var(--main-grey);
+  --color-primary: var(--primary);
+  --font-outfit: var(--font-outfit);
+}
+
+body {
+  color: var(--text);
+  font-family: var(--font-outfit);
+  background: var(--main-grey);
+}
