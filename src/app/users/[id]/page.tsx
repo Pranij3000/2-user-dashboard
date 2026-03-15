@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { usePostStore } from "@/src/store/store";
 import { Post } from "@/src/types/types";
+import AddPost from "@/src/components/sections/AddPost";
 
 import Title from "./../../../components/ui/Title";
 import Error from "@/src/components/ui/Error";
@@ -78,6 +79,8 @@ export default function page() {
                   </button>
                 ))}
               </div>
+
+              <AddPost id={id} />
             </>
           )}
         </div>
