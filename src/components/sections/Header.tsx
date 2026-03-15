@@ -23,8 +23,15 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <aside className={`fixed bg-white z-10 w-full h-full left-0 top-0 transition-all ease-in-out duration-500 ${activateSidebar ? "" : "-translate-x-full"}`}>
-        <div className="ml-auto"></div>
+      <aside className={`fixed bg-white z-10 w-full h-full left-0 top-0 p-5 transition-all ease-in-out duration-500 ${activateSidebar ? "" : "-translate-x-full"}`}>
+        <div className="text-end">
+          <button
+            onClick={() => setSidebar(false)}
+            className="text-[24px]"
+          >
+            ❌
+          </button>
+        </div>
         <ul className="mt-7">
           {Links.map((item, index) => (
             <li
