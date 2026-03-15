@@ -7,7 +7,12 @@ export default function RootLayout({
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>
+        <div className="grid grid-cols-6">
+          <div className="hidden lg:block col-span-1">aside</div>
+          <div className="col-span-6 lg:col-span-5">{children}</div>
+        </div>
+      </main>
     </>
   );
 }
